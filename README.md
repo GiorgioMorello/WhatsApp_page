@@ -1,4 +1,4 @@
 ## Página do WhatsApp feita com HTML e CSS
  
  
- Link da página: https://zipzop-page.netlify.app/
+ Link da página: https://zip-zop-page.netlify.app/
