@@ -85,6 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer
 }
 
 
@@ -133,6 +134,7 @@
     border: none;
     border-radius: 10px;
     background-color: #F0F2F5;
+    padding-left: 25px;
     
 }
 
@@ -149,7 +151,7 @@
 
 .search-bar input::placeholder {
     font-size: 12px;
-    padding-left: 25px
+    padding-left: 25px;
 }
 
 
@@ -257,9 +259,7 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    margin-right: 40px;
-    
-    
+    margin-right: 40px;    
     
 }
 
@@ -365,7 +365,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -11px;
+    right: 95%;
     width: 20px;
     height: 20px;
     background: linear-gradient(-135deg, #ebebeb 0%, #ebebeb 50%, transparent 50%);
@@ -407,7 +407,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 210px;
+    left: 95%;
     width: 20px;
     height: 20px;
     background: linear-gradient(135deg, #D9FDD3 0%, #D9FDD3 50%, transparent 50%);
@@ -416,13 +416,6 @@
 
 
 
-.p_relative {
-    position: absolute;
-    top: 0;
-    left: 380px;
-    z-index: 140;
-    
-}
 
 
 
@@ -431,11 +424,12 @@
     padding: 10px;
     background-color: var(--bg-color);
     min-height: 55px;
-    position: fixed;
-    bottom: 0px;
-    
     display: flex;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    
         
 }
 
@@ -465,12 +459,14 @@
     font-size: 25px;
     color: var(--icon-color);
     margin-left: 10px;
+    cursor: pointer
+
 } 
 
 .mic-icon i {
     font-size: 25px;
     color: var(--icon-color);
-    margin-left: 15px
+    margin-left: 15px;
 }
 
 
